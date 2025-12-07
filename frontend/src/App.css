@@ -1,0 +1,246 @@
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+  color: #0b1021;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e7f0ff, #f8f6ff);
+  border: 1px solid #d8e3ff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #5b6aa1;
+  margin: 0 0 0.25rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: #4b4b63;
+}
+
+.card {
+  border: 1px solid #e1e4ef;
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: #fff;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.04);
+}
+
+.card.warning {
+  border-color: #f4b84b;
+  background: #fff8eb;
+  color: #5f3b00;
+}
+
+.card.muted {
+  background: #f6f8ff;
+  color: #4b4b63;
+}
+
+.proposal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #6c7093;
+  margin: 0 0 0.25rem;
+}
+
+.meta {
+  color: #5b6aa1;
+  margin-top: 0.25rem;
+}
+
+.badge {
+  background: #e9efff;
+  color: #1f3ca6;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.option {
+  border: 1px solid #e1e4ef;
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: #fdfdff;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.option:hover:not(:disabled) {
+  border-color: #3f62ff;
+  box-shadow: 0 6px 14px rgba(63, 98, 255, 0.14);
+}
+
+.option:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.option-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.option-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.option-meta {
+  color: #1f3ca6;
+  font-weight: 700;
+}
+
+.progress {
+  background: #eef1f7;
+  height: 6px;
+  border-radius: 999px;
+  margin: 0.45rem 0;
+}
+
+.progress-bar {
+  background: linear-gradient(135deg, #4e6bff, #3ecbff);
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.option-count {
+  color: #56607d;
+  font-size: 0.95rem;
+}
+
+.message-input {
+  width: 100%;
+  border: 1px solid #d8dcef;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 0.45rem;
+  background: #fff;
+}
+
+.message-input:focus {
+  outline: 2px solid #4e6bff;
+  border-color: #4e6bff;
+}
+
+.primary {
+  background: linear-gradient(135deg, #4e6bff, #6ec8ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(70, 115, 255, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.status {
+  margin-top: 1rem;
+  color: #4b4b63;
+}
+
+.status .error {
+  color: #b3261e;
+}
+
+code {
+  background: #f1f3fb;
+  border-radius: 6px;
+  padding: 0.1rem 0.4rem;
+}
+
+.auth-button {
+  border: 1px solid #d6defa;
+  background: linear-gradient(135deg, #4e6bff, #6ec8ff);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(70, 115, 255, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.auth-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(70, 115, 255, 0.28);
+}
+
+.auth-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(70, 115, 255, 0.22);
+}
+
+.auth-button--google {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.auth-button--ghost {
+  background: linear-gradient(135deg, #4e6bff, #6ec8ff);
+  color: #fff;
+  border: 1px solid #d6defa;
+  box-shadow: 0 8px 18px rgba(70, 115, 255, 0.25);
+}
+
+.auth-button--ghost:hover {
+  box-shadow: 0 10px 22px rgba(70, 115, 255, 0.28);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .proposal-header {
+    flex-direction: column;
+  }
+}
