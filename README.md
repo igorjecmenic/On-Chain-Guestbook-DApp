@@ -37,3 +37,5 @@ Guestbook on Sui where anyone can post short messages (100-byte max) to a shared
   - `POST /api/execute-transaction` with `{ digest, signature }` → executes sponsored tx
   - `GET /health` for status
 - Notes: Enforces 100-byte limit server-side; uses clock object `0x6` in the transaction builder.
+
+Last updated on: 31.12.2025.
